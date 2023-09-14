@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <title>formulário</title>
+</head>
+
+<body>
+     <form>
+         <fieldset>
+             <legend>Introdução </legend>
+              
+             <label for="">Email</label>
+             <br>
+             <input type="text" name="email">
+              <br><br>
+              <label for="filhos">Quantidade de filhos</label>
+              <br>
+              <input type="number" id="filhos" min="0" max="30">
+              <br><br>
+              <input type="date">
+
+              <br><br>
+              <input type="submit" value="mandar" min="2022-01-15"
+              max="2022-12-15" >
+             
+              <br><br>
+              Possui atividades extra?
+               <label>
+                   <input type="radio" 
+                   name="atvExtra">
+                   Sim
+               </label>
+
+               <label>
+                   <input type="radio"
+                   name="atvExtra">
+                   Não
+                </label>
+
+            </fieldset>
+            
+            <fieldset>
+                <legend>Área de interesse</legend>
+                
+                <label>
+                    <input type="checkbox" name="interesse" value="">
+                </label>
+                <input type="checkbox">Html
+                <label> 
+
+                    <input type="checkbox" name="interesse" valeu="css">Css </label>
+                <label>
+
+                    <input type="checkbox" name="interesse" value="javascript">Javascript</label>
+                <label>
+
+                    <input type="checkbox" name="interesse" value="Phyton">Phyton</label>
+                <label>
+
+                    <input type="checkbox" name="interesse" valeu="Java">Java</label>
+                    <br><br>
+                    <label>Escolha uma lingua
+                    <select name="linguagem">
+                       <option>Selecione uma</option>
+                       <option value="html">Html</option>
+                       <option value="css">Css</option>
+                       <option value="js">Javascript</option>
+                       <option value="java">Java</option>
+                       <option value="Phyton">Pyton</option>
+                    </select>
+
+            </fieldset>
+
+            <br><br><br>
+            <input type="subimit" value="mandar">
+     </form>
+</body>
+
+</html>

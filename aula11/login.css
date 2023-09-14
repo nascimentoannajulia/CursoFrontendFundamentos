@@ -50,3 +50,24 @@ legend{
     color: #454e4f;
     font-size: 1.2em;
 }
+
+.btn{
+    width: fit-content;
+    margin-left: auto;
+    background-color: rgb(41, 41, 116);
+    color: white;
+    cursor: pointer;
+}
+
+.actions{
+    display: flex;
+    gap: 1em;
+}
+
+.btn2{
+    background-color: rgb(43, 43, 136);
+}
+
+.btn--apagar{
+    background-color: rgb(128, 43, 56)
+}
