@@ -5,22 +5,33 @@
     <meta charset="UTF-8">
     
     <title>formulário</title>
+
+    <style>
+        body{
+            padding-bottom: 100vh;
+        }
+
+        textarea{
+           resize: none; 
+        }
+    </style>
 </head>
 
+
 <body>
-     <form>
-         <fieldset>
+    <form>
+        <fieldset>
+
              <legend>Introdução </legend>
               
              <label for="">Email</label>
              <br>
-             <input type="text" name="email">
+             <input type="text" name="email" maxlength="10" placeholder="meuemail@gmail.com">
               <br><br>
+              
               <label for="filhos">Quantidade de filhos</label>
               <br>
               <input type="number" id="filhos" min="0" max="30">
-              <br><br>
-              <input type="date">
 
               <br><br>
               <input type="submit" value="mandar" min="2022-01-15"
@@ -40,9 +51,9 @@
                    Não
                 </label>
 
-            </fieldset>
+        </fieldset>
             
-            <fieldset>
+        <fieldset>
                 <legend>Área de interesse</legend>
                 
                 <label>
@@ -63,20 +74,73 @@
                     <input type="checkbox" name="interesse" valeu="Java">Java</label>
                     <br><br>
                     <label>Escolha uma lingua
-                    <select name="linguagem">
-                       <option>Selecione uma</option>
-                       <option value="html">Html</option>
-                       <option value="css">Css</option>
-                       <option value="js">Javascript</option>
-                       <option value="java">Java</option>
-                       <option value="Phyton">Pyton</option>
-                    </select>
+                        <br>
+                        <select name="linguagem" required multiple size="">
+                            <option value="">Selecione uma</option>
 
-            </fieldset>
+                            <optgroup label="frontend">
+                                <option value="html">Html</option>
+                                <option value="css">Css</option>
+                                <option value="js">Javascript</option>
+                            </optgroup>
+       
+                            <optgroup label="backend">
+                                <option value="java">Java</option>
+                                <option value="Phyton">Pyton</option>
+                            </optgroup>
 
-            <br><br><br>
-            <input type="subimit" value="mandar">
-     </form>
+                        </select>
+
+                    <input type="text" list="LinguagemList">
+                        <detailist id="LinguagemList">
+                        <option value="HTML">
+                        <option value="CSS">
+                        <option value="Javascript">
+                        <option value="JAVA">
+                        <option value="Phyton">
+                        <option value="PHP">
+                </detailist>
+            </label>
+
+        </fieldset>
+
+        <fieldset>
+              <legend>mensagem</legend>                   
+              <textarea name="msg" cols="30" rows="5" maxlength="220"></textarea>
+              <br><br>
+              <textarea cols="50" rows="8">
+        CONTRATO DE ULTILIZAÇÃO 
+           1.1 REGRA 1
+           1.2 REGRA 2
+              </textarea>
+              <label>
+                  <input type="checkbox"> Li e aceito o contrato
+              </label>
+
+              <br><br>
+              <input type="file">
+        </fieldset>
+         
+       <input type="hidden" value="abcf112">
+
+        <br><br><br>
+        <input type="subimit" value="mandar">
+        <input type="button" value="button">
+
+        <button type="submit"> <em>mandar com tag button</em></button>
+        <button type="button"> <b>botão</b> </button> 
+
+        <input type="search">
+
+        <br><br>
+
+        <input type="range" min="0" max="10" step=".5" >
+
+        <br><br>
+        <input type="time" name="" id="" >
+        <br><br>
+        <input type="color" name="" id="">
+    </form>
 </body>
 
 </html>
