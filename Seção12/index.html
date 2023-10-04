@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
 
-    <title>Document</title>
+    <title>Cadastro</title>
+
+    <link href="login.html">
+    
 </head>
 
 <style>
@@ -21,20 +24,29 @@ button{
     background-color: #3a68b7;
 }
  
-form{
+.caixa{
    background: white;
-   padding: auto;
-   
+   width: 50%;
+   border: 5px solid #174594;
+   flex: auto;
+   display: flex;
+   justify-content: space-between;
+}
+
+fieldset{
+    flex-direction: column;
+    flex-basis: auto;
+    justify-content: flex-start;
 }
 
 .btn{
-color: white;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-family: Arial, sans-serif;
 }
 </style>
 
 <body>
-    <form action="">
+    <form class="caixa">
         <fieldset>
             <h1>Cadastre-se</h1>
             
