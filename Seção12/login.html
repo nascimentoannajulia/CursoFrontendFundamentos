@@ -7,11 +7,55 @@
 </head>
 
 <style>
+html{
+    background-color: #3a68b7;
+}
+
+.caixa_2{
+    background-color: white;
+    width: 30%;
+    flex: auto;
+   display: flex;
+   align-self: auto;
+   margin-right: auto;
+   margin-left: auto;
+   text-align: center;
+}
+
+
+.titulo{
+    color: #3a68b7;
+    font-size: 30px;
+}
+
+.btn_login{
+    background-color: #3a68b7;
+}
+
+.btn_cadastro{
+    background-color: white;
+}
 </style>
 
 <body>
-    <h1>Login</h1>
+    <form action="" class="caixa_2">
+        <fieldset class="interior_caixa">
+
+          <legend class="titulo">Login</legend>
+      
+          <label for="name">usuário</label>
+          <input type="name" id="name">
+      
+          <label for="senha">senha</label>
+          <input for="senha" id="senha">
+      
+          <button class="btn_login">Login</button>
+          <button class="btn_cadastro">cadastre-se</button>
+      
+          <a href="senha">esqueci minha senha</a>
+        </fieldset>
     
+    </form>
 </body>
 
 </html>

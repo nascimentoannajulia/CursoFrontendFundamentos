@@ -10,30 +10,33 @@
 </head>
 
 <style>
-body{
+html{
     background-color: #3a68b7;
 }
 
-h1{
+.titulo{
     color: #3a68b7;
     font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif ;
 }
-
+      
 button{
     background-color: #3a68b7;
 }
  
 .caixa{
    background: white;
-   width: 50%;
-   border: 5px solid #174594;
+   width: 30%;
    flex: auto;
    display: flex;
-   justify-content: space-between;
+   align-self: auto;
+   margin-right: auto;
+   margin-left: auto;
+   text-align: center;
+   border: 3px solid;
+   border-left: rgba( rgb(41, 38, 38) transparent);
 }
 
-fieldset{
+.dentro_da_caixa{
     flex-direction: column;
     flex-basis: auto;
     justify-content: flex-start;
@@ -47,8 +50,8 @@ fieldset{
 
 <body>
     <form class="caixa">
-        <fieldset>
-            <h1>Cadastre-se</h1>
+        <fieldset class="dentro_da_caixa">
+            <legend class="titulo">Cadastre-se</legend>
             
             <label for="name">usuário</label> 
             <input type="name" id="name">
