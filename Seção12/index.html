@@ -1,74 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
 
-    <title>Cadastro</title>
+    <title>Login</title>
 
-    <link href="login.html">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilo.css">
 </head>
 
-<style>
-html{
-    background-color: #3a68b7;
-}
-
-.titulo{
-    color: #3a68b7;
-    font-size: 30px;
-}
-      
-button{
-    background-color: #3a68b7;
-}
- 
-.caixa{
-   background: white;
-   width: 30%;
-   flex: auto;
-   display: flex;
-   align-self: auto;
-   margin-right: auto;
-   margin-left: auto;
-   text-align: center;
-   border: 3px solid;
-   border-left: rgba( rgb(41, 38, 38) transparent);
-}
-
-.dentro_da_caixa{
-    flex-direction: column;
-    flex-basis: auto;
-    justify-content: flex-start;
-}
-
-.btn{
-    color: white;
-    font-family: Arial, sans-serif;
-}
-</style>
-
 <body>
-    <form class="caixa">
-        <fieldset class="dentro_da_caixa">
-            <legend class="titulo">Cadastre-se</legend>
-            
-            <label for="name">usuário</label> 
-            <input type="name" id="name">
-            
-            <label for="email">email</label>
-            <input type="email" id="email">
-            
-            <label for="senha">senha</label>
-            <input type="senha" id="senha">
-            
-            <button type="button" class="btn">cadaste-se</button>
-            
-            <a>Já possui cadastro?</a>
-            <a href="">faça login</a>
-            
+
+    <form action="#" method="get" autocomplete="off" class="form">
+        <fieldset class="form__fieldset">
+            <legend class="form__title">Cadastre-se</legend>
+
+            <label for="user" class="form__label">Usuário</label>
+            <input type="text" id="user" name="user" required class="form__input">
+
+            <label for="email" class="form__label">E-mail</label>
+            <input type="email" id="email" name="email" required class="form__input">
+
+            <label for="password" class="form__label">Senha</label>
+            <input type="password" id="password" name="password" required class="form__input">
+
+            <div class="form__action">
+                <input type="submit" value="Cadastre-se" class="btn btn-primary">
+                <p class="form__action__aside">
+                    Já possui cadastro? <a href="login.html" class="form__action__link">Faça login</a>
+                </p>
+
+            </div>
         </fieldset>
     </form>
 </body>
-
-</html>

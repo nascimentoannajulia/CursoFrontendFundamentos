@@ -1,60 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
 
-    <title>login</title>
+    <title>Login</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilo.css">
 </head>
 
-<style>
-html{
-    background-color: #3a68b7;
-}
-
-.caixa_2{
-    background-color: white;
-    width: 30%;
-    flex: auto;
-   display: flex;
-   align-self: auto;
-   margin-right: auto;
-   margin-left: auto;
-   text-align: center;
-}
-
-
-.titulo{
-    color: #3a68b7;
-    font-size: 30px;
-}
-
-.btn_login{
-    background-color: #3a68b7;
-}
-
-.btn_cadastro{
-    background-color: white;
-}
-</style>
-
 <body>
-    <form action="" class="caixa_2">
-        <fieldset class="interior_caixa">
 
-          <legend class="titulo">Login</legend>
-      
-          <label for="name">usuário</label>
-          <input type="name" id="name">
-      
-          <label for="senha">senha</label>
-          <input for="senha" id="senha">
-      
-          <button class="btn_login">Login</button>
-          <button class="btn_cadastro">cadastre-se</button>
-      
-          <a href="senha">esqueci minha senha</a>
+    <form action="#" method="get" autocomplete="off" class="form">
+        <fieldset class="form__fieldset">
+            <legend class="form__title">Login</legend>
+
+            <label for="user" class="form__label">Usuário</label>
+            <input type="text" id="user" name="user" required class="form__input">
+
+            <label for="password" class="form__label">Senha</label>
+            <input type="password" id="password" name="password" required class="form__input">
+
+            <div class="form__action">
+                <input type="submit" value="Login" class="btn btn-primary">
+                <a href="index.html" class="btn btn-secondary">Cadastre-se</a>
+                <a href="#" class="form__action__aside">Esqueci a minha senha</a>
+            </div>
         </fieldset>
-    
     </form>
 </body>
 
