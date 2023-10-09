@@ -1,0 +1,33 @@
+p::before{
+    content: "ANTES";
+}
+
+p::after{
+    content: "DEPOIS";
+}
+
+div{
+    border: 5px solid red;
+    padding: 1em;
+}
+
+p{
+    margin: 0;
+}
+
+div::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+div::before{
+    content: url(https://placehold.co/600x400/000000/FFFFFF/png);
+    float: left;
+    margin-right: 1em;
+}
