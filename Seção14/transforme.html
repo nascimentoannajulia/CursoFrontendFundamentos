@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transforme</title>
+
+    <style>
+        body{
+            margin-top: 100vh;
+        }
+
+        div{
+            outline: 1px solid #888;
+            width: 300px;
+            height: 100%;
+            margin: .5em auto;
+        }
+
+        p{
+            width: 100%;
+        }
+
+        .destaque{
+            background-color: yellow;
+        }
+
+        .div1 .destaque{
+            transform: translateX(50%);/*move o elemento destacado*/
+        }
+
+        .div2 .destaque{ /*mesma forma de fazer com o mesmo resultado porém com algumas limitações*/
+            position: relative;
+            left: 25px;
+            top: 100%;
+        }
+
+        .div3 .destaque{
+            transform: rotate(30deg);/*elemento na transversal*/
+        }
+
+        .div4 .destaque{
+             transform: scale(.5, 2);/*aumenta o tamanho ou diminui*/
+        }
+
+
+        .div5 .destaque{ /*fica no angulo pedido*/
+            transform: skewx(45deg);
+        }
+
+        .div6 .destaque{
+            transform: translate(0) rotate(5deg);
+            transform-origin: 50px 50px;
+        }
+
+        .div7 .destaque{
+            transform: rotate(45deg) translate(100px);
+            transform-origin: 0 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eius quod veniam quaerat et dolorum dignissimos cupiditate ullam pariatur ratione eaque, optio asperiores omnis quis ea quisquam mollitia esse! Magni?</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laborum consequatur minima quisquam quos, quia adipisci unde natus odit. Enim assumenda, ad animi expedita architecto facilis cupiditate voluptate commodi. Corporis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum delectus fugiat ad nisi dignissimos minus soluta reiciendis omnis, aut voluptates ullam culpa magnam iure aliquid architecto molestias iste in totam?</p>
+
+    <div class="div2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eius quod veniam quaerat et dolorum dignissimos cupiditate ullam pariatur ratione eaque, optio asperiores omnis quis ea quisquam mollitia esse! Magni?</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laborum consequatur minima quisquam quos, quia adipisci unde natus odit. Enim assumenda, ad animi expedita architecto facilis cupiditate voluptate commodi. Corporis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum delectus fugiat ad nisi dignissimos minus soluta reiciendis omnis, aut voluptates ullam culpa magnam iure aliquid architecto molestias iste in totam?</p>
+    </div>
+
+    <div class="div3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eius quod veniam quaerat et dolorum dignissimos cupiditate ullam pariatur ratione eaque, optio asperiores omnis quis ea quisquam mollitia esse! Magni?</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laborum consequatur minima quisquam quos, quia adipisci unde natus odit. Enim assumenda, ad animi expedita architecto facilis cupiditate voluptate commodi. Corporis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum delectus fugiat ad nisi dignissimos minus soluta reiciendis omnis, aut voluptates ullam culpa magnam iure aliquid architecto molestias iste in totam?</p>
+    </div>
+
+    <div class="div4">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eius quod veniam quaerat et dolorum dignissimos cupiditate ullam pariatur ratione eaque, optio asperiores omnis quis ea quisquam mollitia esse! Magni?</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laborum consequatur minima quisquam quos, quia adipisci unde natus odit. Enim assumenda, ad animi expedita architecto facilis cupiditate voluptate commodi. Corporis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum delectus fugiat ad nisi dignissimos minus soluta reiciendis omnis, aut voluptates ullam culpa magnam iure aliquid architecto molestias iste in totam?</p>
+    </div>
+
+    <div class="div5">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eius quod veniam quaerat et dolorum dignissimos cupiditate ullam pariatur ratione eaque, optio asperiores omnis quis ea quisquam mollitia esse! Magni?</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laborum consequatur minima quisquam quos, quia adipisci unde natus odit. Enim assumenda, ad animi expedita architecto facilis cupiditate voluptate commodi. Corporis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum delectus fugiat ad nisi dignissimos minus soluta reiciendis omnis, aut voluptates ullam culpa magnam iure aliquid architecto molestias iste in totam?</p>
+    </div>
+
+    <div class="div6">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eius quod veniam quaerat et dolorum dignissimos cupiditate ullam pariatur ratione eaque, optio asperiores omnis quis ea quisquam mollitia esse! Magni?</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laborum consequatur minima quisquam quos, quia adipisci unde natus odit. Enim assumenda, ad animi expedita architecto facilis cupiditate voluptate commodi. Corporis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum delectus fugiat ad nisi dignissimos minus soluta reiciendis omnis, aut voluptates ullam culpa magnam iure aliquid architecto molestias iste in totam?</p>
+    </div>
+
+    <div class="div7">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eius quod veniam quaerat et dolorum dignissimos cupiditate ullam pariatur ratione eaque, optio asperiores omnis quis ea quisquam mollitia esse! Magni?</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti laborum consequatur minima quisquam quos, quia adipisci unde natus odit. Enim assumenda, ad animi expedita architecto facilis cupiditate voluptate commodi. Corporis.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum delectus fugiat ad nisi dignissimos minus soluta reiciendis omnis, aut voluptates ullam culpa magnam iure aliquid architecto molestias iste in totam?</p>
+    </div>
+
+</body>
+
+</html>
