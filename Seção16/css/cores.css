@@ -65,7 +65,7 @@ section{
 }
 
 .cores:nth-of-type(7) {
-    background-image: radial-gradient(circle, blue, #f008, green, yellow)
+    background-image: radial-gradient(circle, blue, #f008, green, yellow);
 }
 
 .cores:nth-of-type(8) {
@@ -98,13 +98,13 @@ section{
 
 .cores:nth-of-type(15) {
     background-image: 
-    radial-gradient(circle farthest-side at 50px 20px, blue, #f008)
+    radial-gradient(circle farthest-side at 50px 20px, blue, #f008),
     radial-gradient(circle farthest-corner at bottom right, yellow, transparent);
 }
 
 .cores:nth-of-type(16) {
     background-image:
-    radial-gradient(at top, blue, #f008)
+    radial-gradient(at top, blue, #f008),
     radial-gradient(at bottom, yellow, transparent);
 }
 
@@ -113,10 +113,54 @@ section{
 }
 
 .cores:nth-of-type(18) {
-    background-image:conic-gradient(#f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00 )
-    transition: filter 1s linear;
+    transition: filter 5s linear;
+    background-image:conic-gradient(#f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00 );
 }
 
-.cores:nth-of-type(18) {
-    filter: hue-rotate(360deg); 
+.cores:nth-of-type(18):hover {
+    filter: hue-rotate(10turn); 
 }
+
+.cores:nth-of-type(19) {
+background-image: repeating-linear-gradient(to top right, white 0px, white 5px, black 5%, black 10%);
+}
+
+.cores:nth-of-type(20) {
+    background-image: repeating-linear-gradient( white 0px, white 10px, black 10px, black 20px);
+}
+    
+.cores:nth-of-type(21) {
+    background-image: repeating-linear-gradient( white 0deg, white 10deg, black 10deg, black 20deg);
+}
+
+.cores:nth-of-type(22) {
+    background-image: 
+       repeating-conic-gradient( transparent 0deg, white 0deg, white 10deg, black 10deg, black 20deg),
+       repeating-radial-gradient(red 0%, transparent, blue 20%);                
+    background-attachment:  fixed, scroll;
+}
+
+.cores:nth-of-type(23) {
+    background-image: 
+       repeating-radial-gradient(red 0%, transparent, blue 20%),               
+       repeating-linear-gradient(red, blue);
+    background-attachment: scroll, fixed;
+}
+
+.cores:nth-of-type(23) {
+     box-shadow: 10px 10px 6px rgb(0, 0, 0, .8);
+}
+
+.cores:nth-of-type(24) {
+    filter: drop-shadow(10px 10px 6px rgba(0, 0, 0, .8));
+}
+
+.cores:nth-of-type(25) {
+    filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, .8));
+}
+
+.cores:nth-of-type(26) {
+    filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, .8));
+    background-image: linear-gradient(to top right, transparent 50%, red 50%),
+}
+

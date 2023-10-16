@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: brown;
+    margin-bottom: 50vh;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.card {
+    width: 300px;
+    background-color: white;
+    padding: 40px 30px 30px 50px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.card::before {
+    content: "";
+    display: block;
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .3));
+    background-image:
+        linear-gradient(135deg, transparent 25px, rgb(153, 153, 153) 25px);
+}
+
+.card_title {
+    margin: 0;
+    font-weight: lighter;
+}
+
+.exemplo{
+    width: 1px;
+    height: 1px;
+    background: yellow;
+    border-right: 25px solid black;
+    border-top: 25px solid transparent;
+    margin-top: 30px;
+}
+
+.clippath>div {
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    background-image: repeating-linear-gradient(45deg, yellow 10%);
+}
+
+.dl{
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%, 20% 50%);
+}
+
+    </style>
+</head>
+
+<body>
+    <article class="card">
+        <h2 class="card_title">Lorem ipsum dolor</h2>
+        <p>
+            Sit amet consectetur adipisicing elit. Similique officia facere quos ratione, ipsam libero
+            illum dolorem cupiditate reprehenderit reiciendis dolor.    
+        </p>
+    </article> 
+   <div class="exemplo"></div>
+
+   <section class="clippath">
+      <div id="dl"></div>
+   </section>
+
+</body>
+</html>
