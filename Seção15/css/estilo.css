@@ -233,7 +233,7 @@ select {
 .form-quiz {
     /* width: calc(50% - 1.5rem); */
     width: calc(50% - var(--default-gap) / 2);
-
+/*claculo, onde o brauser irá resolver primeiro em parenteses e depois a subtração */
 }
 
 .btn-stroke {
@@ -241,7 +241,7 @@ select {
 }
 
 .btn-big {
-    font-size: 1.6rem;
+    font-size: 1.6rem;/*tamanho da fonte*/
 }
 
 .btn-full {
