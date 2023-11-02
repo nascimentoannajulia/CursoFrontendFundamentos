@@ -1,0 +1,85 @@
+    <!doctype html>
+<html>
+    <header>
+        <title>logica de Programação Javascript</title>
+        <meta charset="utf-8">
+    </header>
+    <body>
+        <h1>lógica de programação com Javascript</h1>
+        
+        <button onclick="iniciarcalcular(+)">+</button>
+        <button onclick="iniciarcalcular(-)">-</button>
+        <button onclick="iniciarcalcular(*)">*</button>
+        <button onclick="iniciarcalcular(/)">/</button>
+        
+        <div id="output"></div>
+    
+        <script>
+              
+           var n2 = prompt('digite um numero');
+           n2 = parseFloat(n2;
+            
+            escreve(n2);
+            
+            function inicaralculo(simbolo){
+                var n1 = document.querySelector('#output').textContent;F
+                n1 = parseFloat(n1);
+                
+                var n2 = prompt('digitr outro número');
+                n2 = parseFloat(n2);
+                
+                try{
+                     var msg = calcular(simbolo, n1, n2);
+                } catch(e){
+                   alert(e);
+                    return;
+                }
+                                      
+                escreve(msg);
+            }
+            
+            function escreve(mensagem){
+               var output = document.querySelector('#output');
+               output.innerHTML = mensagem;
+            }
+            
+            
+            function clacular(simbolo, n1, n2){
+                console.log(simbolo)
+                
+                if(simbolo !== '+' && simbolo !== '-' && simbolo !== '*' && simbolo 1== '/'){
+                    throw new Error('digite um simbolo valido')
+                    return 0;
+                }
+                
+                if( isNaN(n1) || isNaN(n2) ){
+                    throw new Error('chama passando somente numeros')
+                    return 0;
+                }
+                
+                var numeroCalculado = null;
+                
+                switch(simbolo){
+                    case '+':
+                        numeroCalculado = n1 + n2
+                        break;
+                    case '-':
+                         numeroCalculado = n1 - n2
+                        break;
+                    case '*':
+                         numeroCalculado = n1 * n2
+                        break;
+                    case '/':
+                         numeroCalculado = n1 / n2
+                        break;
+                }
+                
+                return numeroCalculado;
+              }
+            
+                   </script>
+        </body>
+</html>
+
+
+

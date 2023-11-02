@@ -1,0 +1,27 @@
+    <!doctype html>
+<html>
+    <header>
+        <title>logica de Programação Javascript</title>
+        <meta charset="utf-8">
+    </header>
+    <body>
+        <h1>lógica de programação com Javascript</h1>
+        
+        
+        <script>
+             var produtos = new Array('caneta', 'lápis', 'tesoura', 'borracha',' caderno', 'livro');
+            
+            produtos.push('compasso', 'cartolina');
+            
+            var output = document.querySelector('#output');
+            
+            var msg = '';
+            for(var i = 0; i < produtos.length; i++){
+                msg += i + 'produto ' + (i + 1) + ': '+ produtos[i] +' caneta <br>'; 
+            }
+            
+            output.innerHTML = msg;
+        </script>
+    </body>
+        
+</html>

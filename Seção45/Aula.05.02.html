@@ -1,0 +1,66 @@
+    <!doctype html>
+<html>
+    <header>
+        <title>logica de Programação Javascript</title>
+        <meta charset="utf-8">
+    </header>
+    <body>
+        <h1>lógica de programação com Javascript</h1>
+        
+        <button onclick="mostrarArea(largura, altura)">mostrar área em um alert</button>
+
+        <button onclick="mostrarAreaOutput(largura, alura)">mostrar area no output</button>
+        
+        <div id="output"></div>
+        <script>
+            
+            function mostrarAreaAlert(){
+                 var largura = prompt('digite a largura');
+                 largura = parseFloat(largura);
+                
+                 var altura = prompt('digite a altura');
+                 altura = parsetFloat(altura);
+                
+                try{
+                  var area = calcularArea(largura, altura);  
+                } catch(e){
+                    area= e;
+                }
+                
+                 alert('a área total é: ')
+            }
+            
+            function mostrarAreaOutput(){
+                var altura = prompt('digite a altura');
+                largura = parseFloat(largura);
+                
+                var largura = prompt('digite a largura');
+                 altura = parsetFloat(altura);
+                
+                try{
+                   var area = calcularArea(largura, altura); 
+                } catch(e){
+                    alert(e);
+                    area= e;
+                }
+                              
+                document.querySelector('#output'). innerHTML = 'a área total é: ' + area;
+            }
+            
+            mostrarAreaAlert();
+            
+            function calcularArea(l, a){
+                if (l === undefined || a === undefined){
+                   throw new Error('calcularArea precisa receber dois números'); 
+                }
+                if(isNaN(l) || isNaN(a) ){
+                    throw new Error('apenas números')
+                }
+                return l * a;
+        </script>
+            }
+        </body>
+</html>
+
+
+
