@@ -1,0 +1,43 @@
+    <!doctype html>
+<html>
+    <header>
+        <title>logica de Programação Javascript</title>
+        <meta charset="utf-8">
+    </header>
+    <body>
+        <h1>lógica de programação com Javascript</h1>
+        
+        <div id="output"></div>
+        <script>
+        
+            var nomes = new Object();
+        
+                var user1 = new Object();
+                user1.nome = 'Anna';
+                user1.email = 'nascimento@gmail.com';
+                
+                var user2 = new Object();
+                user2.nome = 'Jonas';
+                user2.email = 'henrique@gmail.com';
+            
+                var user3 = new Object();
+                user3.nome = 'AnaKeila';
+                user3.email = 'santos@gmail.com';
+            
+                var user = new Array(user1, user2, user3);
+            
+               console.log(users);
+            
+              var msg = '';
+              var x = 0;
+              while(users[x]){
+                  cosole.log(users[0].nome);
+                  msg += user[x].nome + '-'+ user[x].email +'br>';
+                  x++;
+             }
+              
+              document.querySelector('#output'). innerHTML = msg;
+            
+        </script>
+    </body>
+</html>
