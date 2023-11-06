@@ -1,0 +1,33 @@
+    <!doctype html>
+<html>
+    <head>
+        <title>logica de Programação Javascript</title>
+        <meta charset="utf-8">
+        
+        <script>
+        (function(){    
+           function calculadoraMedia(){
+               
+               var total = 0;
+               var qtd = arguments.length;
+               var x = 0;
+               while(typeof arguments[x] === 'number'){
+                   total += arguments[x];
+                   x++
+               }
+               
+               return total / qtd;
+           }
+           var media1 = calcularMedia(2,3);
+           var media2 = calculadoraMedia(4, 0, 10, 10);
+            
+            console.log('media1: ', media1)
+            console.log('media2: ', media2)
+            })()
+        </script>
+    </head>
+    <body>
+        <h1>lógica de programação com Javascript</h1>
+        
+    </body>
+</html>

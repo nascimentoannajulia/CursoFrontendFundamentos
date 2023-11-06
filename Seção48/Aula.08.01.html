@@ -1,0 +1,72 @@
+    <!doctype html>
+<html>
+    <header>
+        <title>logica de Programação Javascript</title>
+        <meta charset="utf-8">
+        <script>
+            
+            //literal
+           function minhaFuncao(n1, n1) {
+               //corpo da função
+               return n1 + n2;
+           }
+            
+            var soma = somar(10, 20);
+            console.log('Resultado: ', somar);
+            
+            somar.teste = 'propriedade da função';
+            
+            console.log(somar.teste);
+            
+            var teste = function(f){
+                f()
+            };
+            
+            teste(function(){
+                console.log('função passada por parametro');
+            });
+            
+            console.log('------------');
+            
+            var x = 0;
+            
+            function mostraX(){
+                var x = 10; //escopo global
+                y = 20;
+                console.log("mostra x: ", x);
+                console.log("mostra y: ", y);
+
+            }
+            mostraX()
+            
+            console.log("mostra x fora: ", x);
+            console.log("mostra y fora: ", y);
+            
+            //IFEE
+            (function init(){
+                'use strict';
+                isValid = false;
+                console.log(isValid);
+                
+                function somar(){
+                  console.log(arguments);
+                    var result = 0;
+                    var x = 0;
+                    
+                    while(arguments[x]){
+                        result += arguments[x]
+                    }
+                    console.log('result:');
+                somar();
+            })();
+            
+            console.log(isValid);
+            
+        
+        </script>
+    </header>
+    <body>
+        <h1>lógica de programação com Javascript</h1>
+        
+    </body>
+</html>
