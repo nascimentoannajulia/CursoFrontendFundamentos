@@ -1,0 +1,78 @@
+    <!doctype html>
+<html>
+    <head>
+        <title>logica de Programação Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div class="container">
+        <h1>lógica de programação com Javascript</h1>
+            
+            <button id="btn1" onclick="clicar()">botão 1</button>
+            <button id="btn2">botão 2</button>
+            <button id="btn3" onclick=" alert('mundo');">botão 3</button>
+        </div>
+        
+        <div class="container">
+            <h1>propagração de eventos</h1>
+            
+            <div id="d1" style="background: red; padding: 25px;">
+                texto dentro da div
+                <span style="background: yellow;">texto dentro da span</span>
+            </div>
+        </div>
+        
+        <script>
+             var btn2 = document.getElementById('btn2');
+             var btn2 = document.getElementById('btn3');
+            
+             btn2.onclick = clicar;
+            
+            function clicar(){
+                alert('clicou');
+           
+              return function(){
+                  alert('clicou 2');
+              }
+            }
+            
+            btn3.addEventListener("click", function(){
+                alert('clicou com dom level 2');
+            });
+            
+            btn3.addEventListener("click", function(){
+                alert('clicou com dom level 2 com outro evento');
+            });
+            
+            btn3.onclick= function (){
+                alert('ola');
+            }
+
+            btn3.onclick= function(){
+                alert('mundo');
+            }
+            
+            
+            var d1 = document.querySelector('#d1');
+            var $d1Span = document.querySelector('#d1 span');
+            
+            $d1.addEventListener9'click', function(){
+                console.log('click no $d1');
+            }, false);
+            
+             $d1Span.addEventListener9'click', function(){
+                console.log('click no $d1Span');
+            }, false);
+
+            document.addEventListener('click', function(){
+                
+                console.log('clicou no document');
+                console.log(evt.currentTarget);
+            
+            }, false)
+            
+            $d1.addEventListener()
+        </script>
+    </body>
+</html>
+        
