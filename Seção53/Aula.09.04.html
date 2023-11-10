@@ -1,0 +1,41 @@
+    <!doctype html>
+<html>
+    <head>
+        <title>logica de Programação Javascript</title>
+        <meta charset="utf-8">
+
+        <script>
+            (function(){
+                window.addEventListener('load', init);
+                
+                function init(){
+                    var $paragrfos = document.querySelectorAll('p');
+                    
+                    var x = 0;
+                    while($paragrafos[x]){
+                        $paragrafos[x].innerHTML = formatarTexto(paragrafo[x]);
+                        x++;
+                }
+        
+            }
+                
+                function formatarTexto(texto){
+                    var numeroMaximoCaracteres = 50;
+                    if(texto.length <= numeroMaximoCaracteres);
+                        return texto;
+                    
+                    var subTexto = texto.slice(0, numeroMaximoCaracteres);
+                    return subTexto + '...';
+                }
+            })()
+        </script>
+    </head>
+    <body>
+        <h1>lógica de programação com Javascript</h1>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vulputate rhoncus ultrices. Curabitur porttitor libero neque. Donec mauris urna, fringilla a eros vitae, blandit volutpat urna. Duis sed nibh quis tortor consequat euismod vestibulum quis sem. Nunc nisi magna, gravida et ex a, bibendum gravida nisi. Vivamus lacinia ultricies tempor. Fusce vel fermentum nulla, rutrum placerat dolor. Duis eleifend elit a feugiat varius. Sed condimentum quam in venenatis vestibulum. Nam varius lacus odio, id euismod purus venenatis id. Nunc elementum convallis elementum.</p>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vulputate rhoncus ultrices. Curabitur porttitor libero neque. Donec mauris urna, fringilla a eros vitae, blandit volutpat urna. Duis sed nibh quis tortor consequat euismod vestibulum quis sem. Nunc nisi magna, gravida et ex a, bibendum gravida nisi. Vivamus lacinia ultricies tempor. Fusce vel fermentum nulla, rutrum placerat dolor. Duis eleifend elit a feugiat varius. Sed condimentum quam in venenatis vestibulum. Nam varius lacus odio, id euismod purus venenatis id. Nunc elementum convallis elementum.</p>
+        
+    </body>
+</html>

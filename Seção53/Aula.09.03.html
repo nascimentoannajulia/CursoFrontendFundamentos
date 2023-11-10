@@ -1,0 +1,36 @@
+    <!doctype html>
+<html>
+    <head>
+        <title>logica de Programação Javascript</title>
+        <meta charset="utf-8">
+
+        <script>
+            var nome = "Daniel Tapias Morales";
+            
+            var nomeFormatado = formatarNome(nome);
+            
+            function nomeFormatar(nome){
+                //return "Morales, Daniel Tapias";
+                var posicaoUltimoEspaco = nome.lastndexOf('');
+                if(posicaoUltimoEspaco === -1) {
+                    return nome;
+                }(
+                
+                var ultimoNome = nome.slice(posicaoUltimoEspaco + 1);
+                console.log('ultimoNome', ultimoNome);
+                
+                var primeiroNome = nome.slice(0, posicaoUltimoEspaco);
+                console.log('posicaoUltimoEEspaco', posicaoUltimoEspaco);
+                
+                return ultimoNome +',' + primeiroNome;
+            
+            }
+            
+            console.log(nomeFormatado);
+        </script>
+    </head>
+    <body>
+        <h1>lógica de programação com Javascript</h1>
+        
+    </body>
+</html>
